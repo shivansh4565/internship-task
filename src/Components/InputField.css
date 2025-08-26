@@ -1,0 +1,46 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.input-wrapper {
+  position: relative;
+}
+.input-element {
+  padding: 0.5em;
+  border-radius: 4px;
+}
+.input-field.outlined .input-element {
+  border: 1px solid #ccc;
+}
+.input-field.filled .input-element {
+  background: #f0f0f0;
+  border: none;
+}
+.input-field.ghost .input-element {
+  border: none;
+  background: transparent;
+}
+.input-field.invalid .input-element {
+  border-color: red;
+}
+.input-field.dark .input-element {
+  background: #222;
+  color: #fff;
+}
+.clear-btn,
+.toggle-btn {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.loader {
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+}
